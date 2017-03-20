@@ -1,0 +1,9 @@
+  body {
+    padding-top: 10px;
+  }
+
+  @media (max-width: 980px) {
+    body {
+      padding-top: 2.5px;
+    }
+  }
