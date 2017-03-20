@@ -1,9 +1,18 @@
-  body {
-    padding-top: 10px;
-  }
+body {
+	padding-top: 10px;
+}
 
-  @media (max-width: 980px) {
-    body {
-      padding-top: 2.5px;
-    }
-  }
+
+@media (max-width: 980px) {
+	body {
+		padding-top: 2.5px;
+	}
+}
+
+.navbar{
+	margin-bottom: 5px;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
