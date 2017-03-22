@@ -15,4 +15,29 @@ body {
 
 .carousel-inner > .item > img {
     margin: 0 auto;
+    border-radius: 5px;
+}
+
+.carousel-control{
+	border-radius: 10px;
+}
+
+#cartCount{
+	vertical-align: middle;
+	font-size: 0.7em;
+	background-color: #336E7B;
+
+}
+
+.page-footer>.container-fluid{
+	background-color: #000000;	
+}
+
+.footer-copyright>.container-fluid>.row{
+	background-color: #E0E0EE;
+}
+
+.cartHeads{
+	font-size: 0.8em;
+	font-weight: bold;
 }
