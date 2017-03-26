@@ -53,3 +53,18 @@ body {
     height:20px auto;
     border: 1px solid blue;
 }
+
+.displayProductTile{
+    border-radius:10px;
+    border-color: #9c9cb1;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px 2.5px 10px 2.5px;
+    margin: 10px 0px 10px 0px;
+}
+
+
+.displayProductTile>img{
+    width:60%;
+}
+
