@@ -60,7 +60,7 @@
             <li><a href="#">Register</a></li>
           </ul>
         </li>
-        <li><a class="btn" href="#" data-toggle="modal" data-target="#cartModal"><span class="visible-sm visible-xs" style="float:left;"><span class="glyphicon glyphicon-shopping-cart"></span> Cart<span id="cartCount" class="badge" style="float:right;">0</span></span><span class="visible-md visible-lg"><span class="glyphicon glyphicon-shopping-cart" style="float:left;"></span><span id="cartCount" class="badge" style="float:right;">3</span></span></a></li>
+        <li><a class="btn" href="#" data-toggle="modal" data-target="#cartModal"><span class="visible-sm visible-xs" style="float:left;"><span class="glyphicon glyphicon-shopping-cart"></span> Cart<span id="cartCount" class="badge" style="float:right;">0</span></span><span class="visible-md visible-lg"><span class="glyphicon glyphicon-shopping-cart" style="float:left;"></span><span id="cartCount" class="badge" style="float:right;">0</span></span></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </nav>
@@ -147,90 +147,77 @@
       </div>
       
       <div class="modal-body">
+        <div class="row">
+          
+        </div>
 
-      <!-- For each distinct item in the cart, add a row -->
+        <!-- For each distinct item in the cart, add a row -->
         
-        <table class="table table-hover">
-            <tr>
-                <th class="hidden-xs"></th>
-                <th>Name</th>
-                <th class="text-center">Units</th>
-                <th class="text-right">Price</th>
-                <th></th>
-            </tr>
+        <div class="row">
+          <div class="col-xs-5">
+            <p class="cartHeads">Product</p>
+          </div>
+          
+          <div class="col-xs-1">
+          </div>
+
+          <div class="col-xs-6">
+            <div class="col-xs-7">
+              <p class="cartHeads text-center">Units</p>
+            </div>
+
+            <div class="col-xs-5">
+              <p class="cartHeads text-right">Price</p>
+            </div>
+          </div>
+
+          
+        </div>
+        <!-- .PRODUCT -->
+
+        <div class="row">
             
-            <tbody>
-                
-                <!-- PRODUCT -->
-                <tr class="cartProductDetails">
-                    <td class="hidden-xs"><img class="img-responsive cartProductTile" src="\img\_demo\001.jpg"></td>
-                    <td style="vertical-align:middle;">iPhone 7 (RED)</td>
-                    
-                    <td class="text-center" style="vertical-align:middle;">
-                        <a href="#increaseCountandUpdate"><span class="glyphicon glyphicon-plus-sign" style="float:inline; font-size:0.9em;"></span></a> 2 
-                        
-                        <a href="#decreaseCountandUpdate"><span class="glyphicon glyphicon-minus-sign" style="float:inline;font-size:0.9em;"></span></a>
-                    </td>
-                    
-                    <td class="text-right" style="vertical-align:middle;">70,000</td>
-                    
-                    <td class="text-center" style="vertical-align:middle;"><a href="#deleteProductFromCart"><span class="glyphicon glyphicon-trash" style="float:inline;font-size:0.9em;"></span></a></td>
-                </tr>
-                <!-- /.PRODUCT -->
-                
+          <div class="col-xs-7">
+            <div class="col-xs-10">
+              <p class="prodCartContent">Apple iPhone 7 (RED)</p>
+            </div>
+          
+            <div class="col-xs-2">
+              <a href="#deleteThisProduct"><span class="glyphicon glyphicon-trash" style="font-size:0.65em;float:inline;"></span></a>
+            </div>
+          </div>
+          <div class="col-xs-5">
+            <div class="row">
+              <div class="col-xs-5 text-center">  
+                <a href="#increaseCountandUpdate"><span class="glyphicon glyphicon-plus-sign text-center" style="font-size:0.65em;float:inline;"></span></a>
+                <span class="prodCartContent">10</span>
+                <a href="#decreaseCountandUpdate"><span class="glyphicon glyphicon-minus-sign text-center" style="font-size:0.65em;float:inline;"></span></a>
+              </div>
 
-                
-                <!-- PRODUCT -->
-                <tr class="cartProductDetails">
-                    <td class="hidden-xs"><img class="img-responsive cartProductTile" src="\img\_demo\001.jpg"></td>
-                    <td style="vertical-align:middle;">iPhone 7 (RED)</td>
-                    
-                    <td class="text-center" style="vertical-align:middle;">
-                        <a href="#increaseCountandUpdate"><span class="glyphicon glyphicon-plus-sign" style="float:inline; font-size:0.9em;"></span></a> 2 
-                        
-                        <a href="#decreaseCountandUpdate"><span class="glyphicon glyphicon-minus-sign" style="float:inline;font-size:0.9em;"></span></a>
-                    </td>
-                    
-                    <td class="text-right" style="vertical-align:middle;">70,000</td>
-                    
-                    <td class="text-center" style="vertical-align:middle;"><a href="#deleteProductFromCart"><span class="glyphicon glyphicon-trash" style="float:inline;font-size:0.9em;"></span></a></td>
-                </tr>
-                <!-- /.PRODUCT -->
+            <div class="col-xs-7 text-left">
+              <span class="prodCartContent">700000</span>
+            </div>
+              
+            </div>
+          </div>
+
+            
+          </div>
+        </div>
+        <hr>
+        <!-- /.PRODUCT -->
+        
 
 
-                
-                <!-- PRODUCT -->
-                <tr class="cartProductDetails">
-                    <td class="hidden-xs"><img class="img-responsive cartProductTile" src="\img\_demo\001.jpg"></td>
-                    <td style="vertical-align:middle;">iPhone 7 (RED)</td>
-                    
-                    <td class="text-center" style="vertical-align:middle;">
-                        <a href="#increaseCountandUpdate"><span class="glyphicon glyphicon-plus-sign" style="float:inline; font-size:0.9em;"></span></a> 2 
-                        
-                        <a href="#decreaseCountandUpdate"><span class="glyphicon glyphicon-minus-sign" style="float:inline;font-size:0.9em;"></span></a>
-                    </td>
-                    
-                    <td class="text-right" style="vertical-align:middle;">70,000</td>
-                    
-                    <td class="text-center" style="vertical-align:middle;"><a href="#deleteProductFromCart"><span class="glyphicon glyphicon-trash" style="float:inline;font-size:0.9em;"></span></a></td>
-                </tr>
-                <!-- /.PRODUCT -->
-
-                
-
-            </tbody>
-        </table>
-
+      <!-- GRAND TOTAL ROW -->
+      <div class = "row">
+          <div class="col-xs-11 text-right"><p><strong>Total: 700000 INR</strong></p></div>
+      </div>
+      <!-- /GRAND TOTAL ROW -->
 
       <div class="modal-footer">
-        <div class = "row">
-          <div class="col-xs-12 text-right"><p><strong>Total: 630,000 INR</strong></p></div>
-        </div>
-          
-        <div class=row>
-          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-success">Checkout</button>
-        </div>
+        <button type="button" class="btn btn-info" data-dismiss="modal">Save Changes</button>
+        <button type="button" class="btn btn-success">Checkout</button>
       </div>
 
 
@@ -244,9 +231,7 @@
 
 
 
-<!-- LOGIN MODAL -->
-    
-<!-- /.LOGIN MODAL -->
+
 
 
 
