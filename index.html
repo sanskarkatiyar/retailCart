@@ -142,7 +142,7 @@
     <div class="modal-content">
       
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
         <h4 class="modal-title" id="gridSystemModalLabel">Shopping Cart</h4>
       </div>
       
@@ -159,17 +159,23 @@
                 <th></th>
             </tr>
             
-            <tbody>
+            <tbody id="cartProductList">
                 
                 <!-- PRODUCT -->
-                <tr class="cartProductDetails">
+                <tr class="cartProductDetails" id="ProductID1" name="ProductID1">
                     <td class="hidden-xs"><img class="img-responsive cartProductTile" src="\img\_demo\001.jpg"></td>
                     <td style="vertical-align:middle;">iPhone 7 (RED)</td>
                     
                     <td class="text-center" style="vertical-align:middle;">
-                        <a href="#increaseCountandUpdate"><span class="glyphicon glyphicon-plus-sign" style="float:inline; font-size:0.9em;"></span></a> 2 
+                        <a href="#increaseCountandUpdate">
+                            <span class="glyphicon glyphicon-plus-sign" style="float:inline; font-size:0.9em;"></span>
+                        </a> 
                         
-                        <a href="#decreaseCountandUpdate"><span class="glyphicon glyphicon-minus-sign" style="float:inline;font-size:0.9em;"></span></a>
+                        <span name="ProductID_count">2</span> 
+                        
+                        <a href="#decreaseCountandUpdate">
+                            <span class="glyphicon glyphicon-minus-sign" style="float:inline;font-size:0.9em;"></span>
+                        </a>
                     </td>
                     
                     <td class="text-right" style="vertical-align:middle;">70,000</td>
@@ -179,42 +185,6 @@
                 <!-- /.PRODUCT -->
                 
 
-                
-                <!-- PRODUCT -->
-                <tr class="cartProductDetails">
-                    <td class="hidden-xs"><img class="img-responsive cartProductTile" src="\img\_demo\001.jpg"></td>
-                    <td style="vertical-align:middle;">iPhone 7 (RED)</td>
-                    
-                    <td class="text-center" style="vertical-align:middle;">
-                        <a href="#increaseCountandUpdate"><span class="glyphicon glyphicon-plus-sign" style="float:inline; font-size:0.9em;"></span></a> 2 
-                        
-                        <a href="#decreaseCountandUpdate"><span class="glyphicon glyphicon-minus-sign" style="float:inline;font-size:0.9em;"></span></a>
-                    </td>
-                    
-                    <td class="text-right" style="vertical-align:middle;">70,000</td>
-                    
-                    <td class="text-center" style="vertical-align:middle;"><a href="#deleteProductFromCart"><span class="glyphicon glyphicon-trash" style="float:inline;font-size:0.9em;"></span></a></td>
-                </tr>
-                <!-- /.PRODUCT -->
-
-
-                
-                <!-- PRODUCT -->
-                <tr class="cartProductDetails">
-                    <td class="hidden-xs"><img class="img-responsive cartProductTile" src="\img\_demo\001.jpg"></td>
-                    <td style="vertical-align:middle;">iPhone 7 (RED)</td>
-                    
-                    <td class="text-center" style="vertical-align:middle;">
-                        <a href="#increaseCountandUpdate"><span class="glyphicon glyphicon-plus-sign" style="float:inline; font-size:0.9em;"></span></a> 2 
-                        
-                        <a href="#decreaseCountandUpdate"><span class="glyphicon glyphicon-minus-sign" style="float:inline;font-size:0.9em;"></span></a>
-                    </td>
-                    
-                    <td class="text-right" style="vertical-align:middle;">70,000</td>
-                    
-                    <td class="text-center" style="vertical-align:middle;"><a href="#deleteProductFromCart"><span class="glyphicon glyphicon-trash" style="float:inline;font-size:0.9em;"></span></a></td>
-                </tr>
-                <!-- /.PRODUCT -->
 
                 
 
@@ -228,7 +198,7 @@
         </div>
           
         <div class=row>
-          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-info" data-dismiss="modal" onclick="window.location.reload();">Save Changes</button>
           <button type="button" class="btn btn-success">Checkout</button>
         </div>
       </div>
@@ -237,6 +207,7 @@
     
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
+</div>
 </div><!-- /.modal -->
 
 
@@ -282,6 +253,7 @@
 
 <script src="js/vendor/video.js"></script>
 <script src="js/flat-ui.min.js"></script>
+<!-- <script src="js/myJS.js"></script> -->
 
 </body>
 </html>
