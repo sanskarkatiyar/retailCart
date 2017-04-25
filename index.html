@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>webMart</title>
+  <title>bookMart</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Loading Bootstrap -->
@@ -29,15 +29,28 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-5">
             <span class="sr-only">Toggle navigation</span>
           </button>
-          <a class="navbar-brand" href="index.html">webMart</a>
+          <a class="navbar-brand" href="index.html">bookMart</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-5">
           <ul class="nav navbar-nav">
             <li><a href="#">Events<span class="navbar-unread">1</span></a></li>
-            <li class="active"><a href="#">Products</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Fiction</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Non-Fiction</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Self Help</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Autobiography</a></li>
+          </ul>
+        </li>
+            </li>
             <li><a href="#">About</a></li>
+            <li><a href="#">Support</a></li>
           </ul>
          <!--
         <form class="navbar-form navbar-left" action="#" role="search">
@@ -60,7 +73,7 @@
             <li><a href="#">Register</a></li>
           </ul>
         </li>
-        <li><a class="btn" href="#" data-toggle="modal" data-target="#cartModal"><span class="visible-sm visible-xs" style="float:left;"><span class="glyphicon glyphicon-shopping-cart"></span> Cart<span id="cartCount" class="badge" style="float:right;">0</span></span><span class="visible-md visible-lg"><span class="glyphicon glyphicon-shopping-cart" style="float:left;"></span><span id="cartCount" class="badge" style="float:right;">3</span></span></a></li>
+        <li><a class="btn" href="#" data-toggle="modal" data-target="#cartModal"><span class="visible-sm visible-xs" style="float:left;"><span class="glyphicon glyphicon-shopping-cart"></span> Cart<span id="cartCount_xs" class="badge" style="float:right;">0</span></span><span class="visible-md visible-lg"><span class="glyphicon glyphicon-shopping-cart" style="float:left;"></span><span id="cartCount" class="badge" style="float:right;">3</span></span></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </nav>
@@ -163,8 +176,8 @@
                 
                 <!-- PRODUCT -->
                 <tr class="cartProductDetails" id="ProductID1" name="ProductID1">
-                    <td class="hidden-xs"><img class="img-responsive cartProductTile" src="\img\_demo\001.jpg"></td>
-                    <td style="vertical-align:middle;">iPhone 7 (RED)</td>
+                    <td class="hidden-xs"><img class="img-responsive cartProductTile" src="img\_demo\A01.jpg"></td>
+                    <td style="vertical-align:middle;">Only Time Will Tell</td>
                     
                     <td class="text-center" style="vertical-align:middle;">
                         <a href="#increaseCountandUpdate">
@@ -178,23 +191,18 @@
                         </a>
                     </td>
                     
-                    <td class="text-right" style="vertical-align:middle;">70,000</td>
+                    <td class="text-right" style="vertical-align:middle;">499</td>
                     
                     <td class="text-center" style="vertical-align:middle;"><a href="#deleteProductFromCart"><span class="glyphicon glyphicon-trash" style="float:inline;font-size:0.9em;"></span></a></td>
                 </tr>
                 <!-- /.PRODUCT -->
-                
-
-
-                
-
             </tbody>
         </table>
 
 
       <div class="modal-footer">
         <div class = "row">
-          <div class="col-xs-12 text-right"><p><strong>Total: 630,000 INR</strong></p></div>
+          <div class="col-xs-12 text-right"><p><strong>Total: 599 INR</strong></p></div>
         </div>
           
         <div class=row>
@@ -223,15 +231,15 @@
     <div class="container" id="ProductTileList1">
         <div class="row">
             <div class="col-xs-12 col-md-4 displayProductTile">
-                <img class="img-responsive" src="img/_demo/A01.jpg">
+                <img class="img-responsive center-block" src="img/_demo/A01.jpg">
                 <hr>
                 <div class="row">
                     <div class="col-xs-7 col-xs-push-1 text-left">
-                        <p><strong>Apple iPhone 6</strong></p>    
+                        <p><strong>Only Time Will Tell</strong><br>Jeffrey Archer</p>   
                     </div>
                     
                     <div class="col-xs-4 text-right">
-                        <p>INR 45,000</p>    
+                        <p>INR 499</p>    
                     </div>
                 </div>
                 
@@ -244,15 +252,15 @@
             </div>
             
             <div class="col-xs-12 col-md-4 displayProductTile">
-                <img class="img-responsive" src="img/_demo/A02.jpg">
+                <img class="img-responsive center-block" src="img/_demo/A01.jpg">
                 <hr>
                 <div class="row">
                     <div class="col-xs-7 col-xs-push-1 text-left">
-                        <p><strong>Apple iPhone 6SE</strong></p>    
+                        <p><strong>Only Time Will Tell</strong><br>Jeffrey Archer</p>   
                     </div>
                     
                     <div class="col-xs-4 text-right">
-                        <p>INR 56,000</p>    
+                        <p>INR 499</p>    
                     </div>
                 </div>
                 
@@ -266,15 +274,15 @@
             
             
             <div class="col-xs-12 col-md-4 displayProductTile">
-                <img class="img-responsive" src="img/_demo/A03.jpg">
+                <img class="img-responsive center-block" src="img/_demo/A01.jpg">
                 <hr>
                 <div class="row">
                     <div class="col-xs-7 col-xs-push-1 text-left">
-                        <p><strong>Apple iPhone 7</strong></p>    
+                        <p><strong>Only Time Will Tell</strong><br>Jeffrey Archer</p>   
                     </div>
                     
                     <div class="col-xs-4 text-right">
-                        <p>INR 70,000</p>    
+                        <p>INR 499</p>    
                     </div>
                 </div>
                 
@@ -363,8 +371,6 @@
             </span>
         </div>
     
-    
-
         <div class="col-xs-12 col-md-3 text-center" style="padding-bottom:10px;">
             <p style="color:white;vertical-align:bottom auto;">
                 &#9400; Copyright 2017 Sanskar Katiyar

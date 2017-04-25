@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS bookmart_users (
+  user_id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  fname varchar(64) NOT NULL,
+  lname varchar(64) NOT NULL,
+  email varchar(60) NOT NULL UNIQUE,
+  password varchar(255) NOT NULL,
+  addr_house varchar(32) NOT NULL,
+  addr_street varchar(128) NOT NULL,
+  addr_city varchar(32) NOT NULL,
+  addr_state varchar(32) NOT NULL,
+  addr_zip varchar(6) NOT NULL,
+  addr_country varchar(64) NOT NULL
+ ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
