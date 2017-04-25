@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+=======
+<li><a href="#">Events<span class="navbar-unread">1</span></a></li>
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Bookstore <b class="caret"></b></a>
+>>>>>>> origin/master
     <ul class="dropdown-menu">
       <li><a href="#">Fiction</a></li>
       <li class="divider"></li>

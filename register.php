@@ -1,6 +1,10 @@
 <?php 
   session_start();
+<<<<<<< HEAD
   if (!isset($_SESSION['userSession'])) {
+=======
+  if (isset($_SESSION['userSession'])!="") {
+>>>>>>> origin/master
     header("Location: profile.php");
 } 
 
@@ -9,9 +13,16 @@ include('config.php');
 $msg ="";
 
 function filterInput($data) {
+<<<<<<< HEAD
   $data = trim($data);
   //$data = stripslashes($data);
   //$data = htmlspecialchars($data);
+=======
+  //$data = trim($data);
+  //$data = stripslashes($data);
+  //$data = htmlspecialchars($data);
+
+>>>>>>> origin/master
   return $data;
 }
 
@@ -29,7 +40,11 @@ if(isset($_POST['registerBtn'])) {
   $country = filterInput($_POST['address_country']);
 
  
+<<<<<<< HEAD
   $hashed_password = md5($pass);
+=======
+  $hashed_password = password_hash($pass, PASSWORD_DEFAULT);
+>>>>>>> origin/master
  
   $email_exists = mysqli_query($db, "SELECT email FROM users WHERE email='".$email."'");
   $count=mysqli_num_rows($email_exists);

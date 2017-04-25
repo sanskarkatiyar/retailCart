@@ -1,4 +1,5 @@
 <?php 
+<<<<<<< HEAD
 
 require_once 'config.php'; //database configuration
 
@@ -6,6 +7,13 @@ session_start();
 //if (!isset($_SESSION['userSession'])) {
 //  header("Location: index.php");
 //} 
+=======
+  session_start();
+  if (isset($_SESSION['userSession'])!="") {
+    header("Location: home.php");
+} 
+require_once 'config.php';
+>>>>>>> origin/master
 
 ?>
 
@@ -49,6 +57,7 @@ session_start();
           <ul class="nav navbar-nav">
             <?php include('components/nav_menu.php'); ?>
           </ul>
+<<<<<<< HEAD
 
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -79,6 +88,31 @@ session_start();
 
                   
           ?>
+=======
+         <!--
+        <form class="navbar-form navbar-left" action="#" role="search">
+          <div class="form-group">
+            <div class="input-group">
+              <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
+              <span class="input-group-btn">
+                <button type="submit" class="btn"><span class="fui-search"></span></button>
+              </span>
+            </div>
+          </div>
+        </form> 
+      -->
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            
+                  My Account 
+                  <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" data-toggle="modal" data-target=".modalLogin" data-backdrop="true">Login</a></li>
+                    <li class="divider"></li>
+                    <li><a href="register.php">Register</a></li>
+                  </ul>
+>>>>>>> origin/master
 
         </li>
         <li><a class="btn" href="#" data-toggle="modal" data-target="#cartModal"><span class="visible-sm visible-xs" style="float:left;"><span class="glyphicon glyphicon-shopping-cart"></span> Cart<span id="cartCount_xs" class="badge" style="float:right;">0</span></span><span class="visible-md visible-lg"><span class="glyphicon glyphicon-shopping-cart" style="float:left;"></span><span id="cartCount" class="badge" style="float:right;">3</span></span></a></li>
@@ -172,12 +206,95 @@ session_start();
 
 <!-- LOGIN MODAL -->
 <?php include('components/login_modal.php'); ?>
+<<<<<<< HEAD
 
 
 <!-- /.LOGIN MODAL -->
 
 <!-- DISPLAY PAGE -->
 
+=======
+<!-- /.LOGIN MODAL -->
+
+<!-- DISPLAY PAGE -->
+    <div class="container" id="ProductTileList1">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 displayProductTile">
+                <img class="img-responsive center-block" src="img/_demo/A01.jpg">
+                <hr>
+                <div class="row">
+                    <div class="col-xs-7 col-xs-push-1 text-left">
+                        <p><strong>Only Time Will Tell</strong><br>Jeffrey Archer</p>   
+                    </div>
+                    
+                    <div class="col-xs-4 text-right">
+                        <p>INR 499</p>    
+                    </div>
+                </div>
+                
+                <div class="row text-center">
+                    <div class="col-xs-12">
+                        <input type="text" size=2 id="productID_units" value=1>
+                        <button class="btn btn-primary">Add To Cart</button>    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-md-4 displayProductTile">
+                <img class="img-responsive center-block" src="img/_demo/A01.jpg">
+                <hr>
+                <div class="row">
+                    <div class="col-xs-7 col-xs-push-1 text-left">
+                        <p><strong>Only Time Will Tell</strong><br>Jeffrey Archer</p>   
+                    </div>
+                    
+                    <div class="col-xs-4 text-right">
+                        <p>INR 499</p>    
+                    </div>
+                </div>
+                
+                <div class="row text-center">
+                    <div class="col-xs-12">
+                        <input type="text" size=2 id="productID_units" value=1>
+                        <button class="btn btn-primary">Add To Cart</button>    
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-xs-12 col-md-4 displayProductTile">
+                <img class="img-responsive center-block" src="img/_demo/A01.jpg">
+                <hr>
+                <div class="row">
+                    <div class="col-xs-7 col-xs-push-1 text-left">
+                        <p><strong>Only Time Will Tell</strong><br>Jeffrey Archer</p>   
+                    </div>
+                    
+                    <div class="col-xs-4 text-right">
+                        <p>INR 499</p>    
+                    </div>
+                </div>
+                
+                <div class="row text-center">
+                    <div class="col-xs-12">
+                        <input type="text" size=2 id="productID_units" value=1>
+                        <button class="btn btn-primary">Add To Cart</button>    
+                    </div>
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+    </div>
+    
+>>>>>>> origin/master
 <!-- /.DISPLAY PAGE -->
 
 <!-- FOOTER -->
@@ -191,6 +308,7 @@ session_start();
 <script src="js/flat-ui.min.js"></script>
 <script src="js/myJS.js"></script>
 
+<<<<<<< HEAD
 <script type="text/javascript">
 function log_in()
 {
@@ -223,5 +341,11 @@ function log_in()
 </script>
 
 
+=======
+<script>
+
+</script>
+
+>>>>>>> origin/master
 </body>
 </html>

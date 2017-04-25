@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 error_reporting(E_ERROR);
  session_start();
  require_once 'config.php';
@@ -23,3 +24,7 @@ error_reporting(E_ERROR);
     
 
 ?>
+=======
+  
+?>
+>>>>>>> origin/master
